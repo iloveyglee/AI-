@@ -64,10 +64,10 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen pb-10">
+    <div className="min-h-screen pb-10 flex flex-col">
       <Header />
       
-      <main className="pt-20 px-2 sm:px-4">
+      <main className="flex-grow pt-20 px-2 sm:px-4 lg:px-8 w-full">
         {status === GenerationStatus.LOADING && wallpapers.length === 0 ? (
           <div className="flex flex-col items-center justify-center h-[60vh] text-slate-400">
              <div className="w-12 h-12 border-4 border-purple-500 border-t-transparent rounded-full animate-spin mb-4"></div>

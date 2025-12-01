@@ -20,11 +20,11 @@ export const WallpaperGrid: React.FC<WallpaperGridProps> = ({ wallpapers, onSele
   }
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 px-4 pb-24 max-w-4xl mx-auto">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 px-4 pb-24 max-w-7xl mx-auto">
       {wallpapers.map((wp, index) => (
         <div 
           key={wp.id} 
-          className="relative aspect-[16/9] overflow-hidden rounded-2xl bg-slate-800 cursor-pointer group shadow-lg ring-1 ring-white/10"
+          className="relative aspect-[16/9] overflow-hidden rounded-2xl bg-slate-800 cursor-pointer group shadow-lg ring-1 ring-white/10 transition-all hover:ring-purple-500/50"
           onClick={() => onSelect(wp)}
         >
           <img 
