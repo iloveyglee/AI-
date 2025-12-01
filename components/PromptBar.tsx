@@ -55,7 +55,7 @@ export const PromptBar: React.FC<PromptBarProps> = ({
           type="text"
           value={prompt}
           onChange={(e) => setPrompt(e.target.value)}
-          placeholder={isRemixMode ? "어떻게 이미지를 변형할까요?" : "예: 해 질 무렵의 서정적인 도시 풍경"}
+          placeholder={isRemixMode ? "어떻게 이미지를 변형 할까요?" : "예: 해 질 무렵의 서정적인 도시 풍경"}
           className={`w-full bg-slate-800 text-white placeholder-slate-400 rounded-full py-3.5 pl-5 pr-14 
             border border-slate-700 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 focus:outline-none 
             shadow-lg transition-all duration-300 ${isLoading ? 'opacity-50 cursor-not-allowed' : ''}`}
